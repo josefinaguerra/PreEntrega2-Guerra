@@ -12,88 +12,50 @@
  }
  /* HEADER */
  header{
-    background-color: #D7CDCC;
-    font-family: Poppins;
-    height: 70px;
-    width: 100%;
-    position: fixed;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
-    grid-area: header;
- }
- .header__main{
-    display: flex;
+   width: 100%;
+   background-color: #bcb3b2;
+   position: fixed;
+   justify-content: space-between;
+   z-index: 4000;
  }
  .header__logo{
-    height: 100px;
-    width: auto;
-    display: block;
- }
- .navbar{
-    padding-right: 20px;
- }
- .header__title{
-    display: flex;
-    font-weight: 400;
-    font-size: 25px;
-    align-items: center;
- }
- .navbar__menu label{
-    display: none;
- }
-#label, #hamburger{
-   display: none;
+   height: 100px;
+   width: auto;
+   display: inline;
 }
- .navbar__menu ul{
-    display: flex;
-    flex-direction: row;
-    font-weight: 400;
-    font-size: 20px;
-    position: relative;
-    list-style-type: none;
- }
- .navbar__menu ul li{
-    padding: 0px 15px;
- }
- .navbar__submenu{
-    position: relative;
- }
- .navbar__submenu ul{
-    display: none;
- }
- .navbar__submenu ul li{
-    padding: 5px;
-    cursor: pointer;
- }
- .navbar__submenu:hover ul{
-    display: block;
-    position: absolute;
-    top: 35px;
-    border-radius: 5px;
-    background-color: #6B717E;
- }
- .navbar__menu ul li:hover{
-    transition: 1s;
-    background-color: #6B717E;
-    padding: 3px 8px;
-    border-radius: 8%;
- }
+.navbar-collapse{
+   flex-grow: 0;
+}
+.navbar{
+   height: 80px;
+}
+.navbar-nav li a{
+   color: #010400;
+   font-size: 20px;
+}
+.nav-item:hover{
+   transition: 1s;
+   background-color: #817c7c;
+   border-radius: 8%;
+}
+.dropdown-menu{
+   background-color: #817c7c;
+}
+.dropdown-item:hover{
+   background-color: #958e8e;
+   transition: 0.5s;
+   border-radius: 8%;
+   width: fit-content;
+}
+
  /* INDEX */
- main{
-    grid-area: main;
+ .carousel{
+   padding-top: 80px;
+   margin: 0px 100px;
  }
- .main__slide{
-    display: flex;
-    justify-content: center;
- }
- .img__slide{
-    margin-top: 70px;
-    height: 700px;
-    width: 80%;
+ .d-block{
+   height: 600px;
+   object-fit: cover;
  }
  .contact__link{
     display: flex;
@@ -157,23 +119,19 @@
     font-weight: 400;
     padding: 20px 0px;
  }
- .location__img{
-    display: flex;
+ .location_img{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-column-gap: 40px;
  }
- .location__map{
-    height: 400px;
-    width: 600px;
+ .map__location{
+   width: 600px;
  }
  .street-view{
-    height: 400px;
-    width: 600px;
-    padding-left: 75px;
+   width: 600px;
+   height: 450px;
  }
  /* MAIN IMG */
- .container-img{
-    display: flex;
-    justify-content: center;
- }
  .main-img{
     margin-top: 70px;
     height: 650px;
@@ -201,7 +159,7 @@
  .contact__title{
     font-weight: 400;
     font-size: 30px;
-    margin: 20px 30px 0px 30px;
+    margin: 20px 0px 0px 30px;
     background-color: #bcb3b2;
     padding-left: 20px;
  }
@@ -217,12 +175,17 @@
     margin-bottom: 10px;
  }
  .form__item{
-    width: 500px;
+    width: 100%;;
  }
  .form__button{
     justify-content: right;
     margin-top: 10px;
-    width: 50px;
+    width: 80px;
+    border-radius: 10%;
+ }
+ .form__button:hover{
+   background-color: #817c7c;
+   transition: 0.5s;
  }
  .container__us{
     display: flex;
@@ -248,29 +211,27 @@
  .time__info p{
     margin: 20px 0px 20px 40px;
     text-align: justify;
-    width: 500px;
+    width: 90%;
  }
   
  /* PROPIEDADES */
+ .banner-img{
+   margin-top: 80px;
+   width: 100%;
+   height: 600px;
+ }
  .properties{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 60px;
-    text-align: center;
-    flex-wrap: wrap;
+   display: flex;
+   justify-content: space-evenly;
  }
  .property-card{
-    display: flex;
-    flex-direction: column;
     background-color: #bcb3b2;
     font-family: Poppins;
     border-radius: 8%;
     border: #958e8e solid 2px;
     width: 350px;
     height: 500px;
+    margin: 50px 0px;
  }
  .property-card:hover{
     transform: scale(1.2);
@@ -293,7 +254,7 @@
  footer{
     background-color: #d7cdccbe;
     font-family: Poppins;
-    height: 90px;
+    height: 120px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -302,9 +263,9 @@
     grid-area: footer;
  }
  .logo{
-    height: 30px;
+    height: 40px;
     width: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
  }
  .footer__menu ul{
     display: flex;
@@ -312,186 +273,150 @@
     list-style-type: none;
  }
  .footer__menu ul li{
-    padding: 0px 10px;
+    padding-top: 20px;
+    padding-left: 15px;
  }
  footer div h4{
     font-weight: 400;
+    font-size: 13px;
  }
  
 
-
-/* ------------------------------- MEDIA QUERIE */
-@media screen and (max-width:768px){
-   /* ------------------------INDEX */
-   main{
-      overflow: hidden;
-   }
+ /* -----------------------------MEDIA QUERIE MOBILE */
+ @media screen and (max-width:768px){
+   /* ----------------INDEX */
    header{
-      width: 370px;
-    }
-   .header__title{
+      width: 100%;
+      height: 90px;
+   }
+   header nav .container-fluid{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   .header__logo{
+      height: 80px;
+      width: auto;
+   }
+   .navbar-brand{
       font-size: 15px;
-    }
-   .navbar__menu ul{
-      display:none;
-    }
-   #label{
-      display: inline-block;
-      font-size: 40px;
-    }
-   .img__slide{
+   }
+   .navbar-toggler{
+      border: 0;
+   }
+   .navbar-nav{
+      margin-top: -10px;
+      padding-left: 20px;
+      background-color: #bcb3b2;
+   }
+   .carousel{
+      width: 90%;
+      margin-left: 25px;
+      padding-top: 100px;
+   }
+   .d-block{
       height: 300px;
    }
    .contact__link h3{
-      font-size: 13px;
+      font-size: 15px;
    }
-   .places__title h2{
-      font-size: 30px;
-   }
-   .places__general{     
-      justify-content: center;
-      flex-wrap: wrap;
-   }
-   .place__title{
-      padding: 10px;
-   }
-   .general__img{
-      width: 250px;
-   }
-   .location__general{
-      flex-wrap: wrap;
-      align-items: center;
-   }
-   .location__title{
-      margin-left: -20px;
-   }
-   .location__map, .street-view{
-      height: 300px;
-      width: 320px;
-      padding-top: 20px;
-      padding-left: 0px;
-      margin-left: -50px;
-   }
-   footer{
-      height: 70px;
-   }
-   .footer__menu ul li, footer h4{
-      font-size: 10px;
-   }
-   .logo{
-      height: 20px;
-      width: 20px;
-   }   
-   /* --------------------PROPIEDADES */
-   .main-img{
-      height:300px;
-   }
-   .properties{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 10px;
+   .places__general{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 20px;
       grid-row-gap: 20px;
    }
-   .property-card{
-      overflow:hidden;
-      height:400px;
-      width:170px;
+   .img__container{
+      display: flex;
+      justify-content: center;
    }
-   .property-card h2{
-      font-size: 20px;
+   .location__general{
+      margin: 0;
    }
-   .property-img{
-      width:150px;
-      height:100px;
+   .location__general h2{
+      padding-left: 20px;
    }
-   .property-card p{
-      font-size:13px;
-   }
-/* ------------------------- CONTACTO */
-   .container__contact{
-      display:grid;
-      align-items:center;
+   .location_img{
+      display: grid;
       grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+      margin-left: 30px;
+      margin-bottom: 40px;
    }
-   .contact__title{
-      margin:15px;
-      width:300px;
+   .map__location{
+      width: 320px;
+      height: 300px;
    }
-   .form__container{
-      margin:15px;
-      width:300px;
+   .street-view{
+      width: 320px;
+      height: 300px;
    }
-   .form__item{
-      width:90%;
+   footer{
+      height: 150px;
    }
-   .time__info p{
-      width:55%;
-   }  
-}
-
-@media (min-width:768px) and (max-width:1200px){
-   header{
-      width: 768px;;
-   }
-   .img__slide{
+   /* ------------------------PROPIEDADES */
+   .banner-img{
       height: 400px;
    }
-   .contact__link h3{
-      font-size: 20px;
+   /* ------------------------ CONTACTO */
+   .time__info p{
+      width: 80%;
+   }
+ }
+/* ----------------------------------MEDIA QUERIE TABLET */
+ @media (min-width:768px) and (max-width: 1200px){
+   /* --------------------INDEX */
+   header{
+      width: 100%;
+      height: 90px;
+   }
+   header nav .container-fluid{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   .header__logo{
+      height: 80px;
+      width: auto;
+   }
+   .navbar-brand{
+      font-size: 15px;
+   }
+   .navbar-toggler{
+      border: 0;
+   }
+   .navbar-nav{
+      margin-top: -10px;
+      padding-left: 20px;
+      background-color: #bcb3b2;
    }
    .places__general{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-column-gap: 30px;
-      grid-row-gap: 30px;
+   }
+   .img__container{
+      display: flex;
+      justify-content: center;
    }
    .general__img{
-      margin-left: 60px;
+      margin: 20px;
    }
    .location_img{
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 20px;
-      justify-content: center;
+      grid-template-columns: 1fr;
+      grid-row-gap: 20px;
+      margin-left: 30px;
    }
-   footer{
-      height: 90px;
-   }
-   .footer__menu ul li, footer h4{
-      font-size: 17px;
-   }
-   .logo{
-      height: 30px;
-      width: 30px;
-   } 
-   /* ---------------------------PROPIEDADES */
-   .properties{
-      grid-column-gap: 30px;
-      grid-row-gap: 30px;
-   }
-   .main-img{
-      height: 400px;
-   }
+   /* -------------------- PROPERTIES */
    .property-card{
       width: 300px;
-      height: 450px;
+      height: 550px;
+      margin: 20px 0px;
    }
-   .property-img{
-      width: 270px;
-      height: 200px;
+   .main-img{
+      height: 500px;
    }
-   /* --------------------------- CONTACTO */
-   .container__contact{
-      grid-template-columns: 1fr 1fr;
-      align-items: baseline;
-   }
-   .time__info{
-      width: 680px;
-   }
-   .time__info p{
-      width: 100%;
-   }
-}
+ }
 
 
 

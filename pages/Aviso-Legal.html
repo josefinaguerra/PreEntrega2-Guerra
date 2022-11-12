@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso Legal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../imagenes/Icono.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,33 +13,46 @@
 </head>
 <body>
     <header>
-        <div class="header__main">
-            <a href="../index.html"><img src="../imagenes/Icono.png" alt="logo" class="header__logo"></a>
-            <h2 class="header__title"><a href="../index.html">Inmobiliaria Rojas Alicante</h2>
-        </div>
-        <nav class="navbar">
-            <div>
-                <label for="hamburger" id="label">&#9776;</label>
-                <input type="checkbox" id="hamburger">
-            </div>
-            <div class="navbar__menu">
-                <ul class="ham-items">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/Propiedades.html">Propiedades</a></li>
-                        <div class="navbar__submenu">
-                            <ul>
-                                <li> Alquilar</li>
-                                <li> Comprar</li>
-                            </ul>
-                        </div>
-                    <li><a href="../pages/Sobre-Nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="../pages/Contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../imagenes/Icono.png" alt="logo" class="header__logo">
+                Inmobiliaria Rojas Alicante
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Propiedades
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/Propiedades.html">Alquilar</a></li>
+                      <li><a class="dropdown-item" href="../pages/Propiedades.html">Comprar</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Sobre-Nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/Contacto.html">Contacto</a>
+                  </li>
                 </ul>
+              </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container-img"><img src="../imagenes/Alicante2.jpg" alt="Alicante" class="main-img"></div>
+      <div class="container">
+        <div class="row">
+          <img src="../imagenes/Alicante2.jpg" alt="Alicante" class="main-img col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        </div>
+      </div>
         <div>
             <h2 class="us__title">Aviso Legal</h2>
             <p class="us__info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quis atque placeat est. Doloremque, atque corrupti numquam rem veniam voluptate harum excepturi? Quas aliquam, pariatur saepe suscipit quasi tenetur esse! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel eum est expedita cumque perferendis magni. Velit nostrum alias, quae ipsum consectetur optio explicabo, tempore dolor labore quisquam quibusdam eius. Qui? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia molestiae inventore earum esse iste. Ut quo error et asperiores saepe debitis, dolorum, dicta delectus laborum, ab aut natus doloremque ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam dolore saepe nostrum reiciendis fugiat impedit omnis quisquam dolorem, est nulla officia qui, deleniti suscipit dicta amet incidunt ad excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro vitae excepturi voluptatum fugiat in. Dolor aut at possimus facilis provident, repellat officia quasi recusandae! Harum vitae nesciunt eaque vero illum.</p>
@@ -61,6 +75,7 @@
          <h4> © 2022</h4>
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>

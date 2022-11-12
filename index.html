@@ -6,44 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Rojas Alicante</title>
     <link rel="shortcut icon" href="imagenes/Icono.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header__main">
-            <a href="index.html"><img src="imagenes/Icono.png" alt="logo" class="header__logo"></a>
-            <h2 class="header__title"><a href="index.html">Inmobiliaria Rojas Alicante</h2>
-        </div>
-        <nav class="navbar">
-            <div>
-                <label for="hamburger" id="label">&#9776;</label>
-                <input type="checkbox" id="hamburger">
-            </div>
-            <div class="navbar__menu">
-                <ul class="ham-items">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li class="navbar__submenu"><a href="pages/Propiedades.html">Propiedades</a>
-                        <div>
-                            <ul>
-                                <li> Alquilar</li>
-                                <li> Comprar</li>
-                            </ul>
-                        </div>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imagenes/Icono.png" alt="logo" class="header__logo">
+                    Inmobiliaria Rojas Alicante
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                     </li>
-                    <li><a href="pages/Sobre-Nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="pages/Contacto.html">Contacto</a></li>
-                </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Propiedades
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/Propiedades.html">Alquilar</a></li>
+                        <li><a class="dropdown-item" href="./pages/Propiedades.html">Comprar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Sobre-Nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/Contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+              </div>
             </div>
         </nav>
     </header>
 
 
     <main>
-        <div class="main__slide">
-            <img src="imagenes/Propiedad1.jpeg" alt="Propiedad" class="img__slide">
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./imagenes/Propiedad1.jpeg" class="d-block w-100" alt="property">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/San Gabriel/WhatsApp Image 2022-10-14 at 9.58.46 AM (3).jpeg" class="d-block w-100" alt="property">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./imagenes/Carolinas/Pla/WhatsApp Image 2022-10-14 at 4.04.25 PM (1).jpeg" class="d-block w-100" alt="property">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <div class="contact__link">
             <h3><a href="pages/Contacto.html">¿Quieres vender tu propiedad?</a></h3>
@@ -52,27 +86,39 @@
             <article class="places__title">
                 <h2>Barrios</h2>
             </article>
-            <article class="places__general">
-                <div>
-                    <h3 class="place__title">Barrio San Gabriel</h3>
-                    <img src="imagenes/Alicante2.jpg" alt="Barrio San Gabriel" class="general__img">
-                </div>
-                <div>
-                    <h3 class="place__title">Barrio Carolinas</h3>
-                    <img src="imagenes/Alicante2.jpg" alt="Barrio Carolinas" class="general__img">
-                </div>
-                <div>
-                    <h3 class="place__title">Barrio El Pla</h3>
-                    <img src="imagenes/Alicante2.jpg" alt="Barrio El Pla" class="general__img">
-                </div>
-            </article>
+            <div>
+                <article class="places__general">
+                    <div>
+                        <h3 class="place__title">Barrio San Gabriel</h3>
+                        <div class="img__container">
+                            <img src="imagenes/Alicante2.jpg" alt="Barrio San Gabriel" class="general__img">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="place__title">Barrio Carolinas</h3>
+                        <div class="img__container">
+                            <img src="imagenes/Alicante2.jpg" alt="Barrio Carolinas" class="general__img">
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="place__title">Barrio El Pla</h3>
+                        <div class="img__container">
+                            <img src="imagenes/Alicante2.jpg" alt="Barrio El Pla" class="general__img">
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
         <section class="location">
             <article class="location__general">
                 <h2 class="location__title">Encontranos Aqui</h2>
                 <div class="location_img">
-                    <img src="imagenes/Mapa.png" alt="Ubicacion" class="location__map">
-                    <img src="imagenes/Inmobiliaria.png" alt="Inmobiliaria" class="street-view">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d568.5944649154841!2d-0.48404662826212896!3d38.36050386940695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd62373e2ae755f5%3A0x85c79c0b3eb94b2d!2sInmobiliaria%20Rojas!5e0!3m2!1ses!2ses!4v1668161173465!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map__location"></iframe>
+                    </div>
+                    <div class="view__container">
+                        <img src="imagenes/Inmobiliaria.png" alt="Inmobiliaria" class="street-view">
+                    </div>
                 </div>
             </article>
         </section>
@@ -97,6 +143,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
