@@ -359,6 +359,9 @@
       height: 400px;
    }
    /* ------------------------ CONTACTO */
+   .main-img{
+      height: 300px;
+   }
    .time__info p{
       width: 80%;
    }
