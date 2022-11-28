@@ -1,0 +1,29 @@
+/* BASE */
+@import "./base/reset.scss";
+@import "./base/typo.scss";
+@import "./base/colors.scss";
+
+
+/* LAYOUT */
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+
+/* ---------------PAGES */
+
+/* INDEX */
+@import "./pages/index.scss";
+/* SOBRE NOSOTROS */
+@import "./pages/us.scss";
+/* CONTACTO */
+@import "./pages/contact.scss";
+/* PROPIEDADES */
+@import "./pages/properties.scss";
+
+
+/* COMPONENTS */
+@import "./components/carousel.scss";
+@import "./components/contactbutton.scss";
+@import "./components/mainimg.scss";
+@import "./components/form.scss";
+@import "./components/card.scss";

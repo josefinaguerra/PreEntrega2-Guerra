@@ -1,0 +1,41 @@
+main{
+   background-color: $primary_color;
+    .container__contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     }
+    .contact__title{
+        font-weight: 400;
+        font-size: 30px;
+        margin: 20px 0px 0px 30px;
+        background-color: $secondary_color;
+        padding-left: 20px;
+     }
+     .container__us{
+        display: flex;
+        flex-direction: column;
+     }
+     .us__info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 100px;
+     }
+     .us__icon{
+        height: 40px;
+        width: auto;
+        margin: 0px 10px 0px 20px;
+     }
+     .container__time{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 500px;
+     }
+     .time__info p{
+        margin: 20px 0px 20px 40px;
+        text-align: justify;
+        width: 90%;
+     }
+}

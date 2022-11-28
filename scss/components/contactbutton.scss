@@ -1,0 +1,18 @@
+.contact__link{
+    display: flex;
+    justify-content: right;
+    h3{
+        font-weight: 400;
+        font-size: 22px;
+        margin: 20px 20px;
+        border: 3px black solid;
+        border-top: 0px;
+        border-left: 0px;
+        background-color: $tertiary_color;
+        padding: 5px;
+    }
+    &:hover{
+        transform: translate(0px, -10px);
+        transition: 0.5s;
+    }
+}
