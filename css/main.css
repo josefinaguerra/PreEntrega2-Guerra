@@ -112,7 +112,7 @@ main {
       display: flex;
       justify-content: center; }
       main .location_img .map-container iframe, main .location_img .map-container img, main .location_img .view__container iframe, main .location_img .view__container img {
-        width: 80%; }
+        width: 90%; }
 
 /* SOBRE NOSOTROS */
 main {
@@ -176,13 +176,18 @@ main {
     justify-content: space-evenly; }
 
 /* COMPONENTS */
-.carousel {
-  padding-top: 80px;
-  margin: 0px 100px; }
-
-.d-block {
-  height: 600px;
-  object-fit: cover; }
+.container__carousel {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  .container__carousel .carousel {
+    padding-top: 90px;
+    width: 90%; }
+    .container__carousel .carousel .carousel-control-prev, .container__carousel .carousel .carousel-control-next {
+      padding-top: 40px; }
+  .container__carousel .d-block {
+    height: 600px;
+    object-fit: cover; }
 
 .contact__link {
   display: flex;
@@ -265,14 +270,14 @@ main {
       background-color: #bdb5b5;
       margin-top: -10px;
       padding: 10px; }
-  .carousel {
-    width: 90%;
-    margin-left: 25px;
-    padding-top: 100px; }
-    .carousel button {
-      padding-top: 100px; }
-  .d-block {
+  .container__carousel .carousel {
+    width: 90%; }
+    .container__carousel .carousel .carousel-control-prev, .container__carousel .carousel .carousel-control-next {
+      padding-top: 80px; }
+  .container__carousel .carousel-item {
     height: 300px; }
+    .container__carousel .carousel-item .d-block {
+      height: 300px; }
   .contact__link h3 {
     font-size: 15px; }
   main .places__general {
@@ -292,7 +297,7 @@ main {
   main .location_img {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 20px; }
+    grid-row-gap: 40px; }
     main .location_img iframe, main .location_img img {
       height: 300px; }
   footer {
@@ -329,6 +334,8 @@ main {
       margin-top: -10px;
       padding-left: 20px;
       background-color: #bcb3b2; }
+  main .container__carousel .carousel .carousel-control-prev, main .container__carousel .carousel .carousel-control-next {
+    padding-top: 80px; }
   main .places__general {
     display: grid;
     grid-template-columns: 1fr 1fr; }
@@ -340,8 +347,7 @@ main {
   main .location_img {
     display: grid;
     grid-template-columns: 1fr;
-    grid-row-gap: 20px;
-    margin-left: 30px; }
+    grid-row-gap: 20px; }
   /* -------------------- PROPERTIES */
   .property-card {
     width: 300px;
