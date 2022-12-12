@@ -1,16 +1,8 @@
-.container__carousel{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    .carousel{
-        padding-top: 90px;
-        width: 90%;
-        .carousel-control-prev, .carousel-control-next{
-            padding-top: 40px;
-        }
-    }
-    .d-block{
-        height: 600px;
-        object-fit: cover;
-    }
+.carousel{
+    padding-top: 40px;
+    margin: 0px 100px;
+}
+.d-block{
+    height: 600px;
+    object-fit: cover;
 }

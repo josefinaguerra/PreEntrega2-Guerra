@@ -20,19 +20,27 @@
             padding: 10px;
         }
     }
-    .container__carousel{
-        .carousel{
-            width: 90%;
-            .carousel-control-prev, .carousel-control-next{
-                padding-top: 80px;
+    .container__banner{
+        .banner__title{
+            h1{
+                font-size: 60px;
             }
         }
-        .carousel-item{
-            height: 300px;
-            .d-block{
-                height: 300px;
+        .banner__img{
+            img{
+                height: 500px;
             }
         }
+    }
+    .carousel{
+       width: 90%;
+       margin-left: 25px;
+        button{
+            padding-top: 100px;
+        }
+    }
+    .d-block{
+       height: 300px;
     }
     .contact__link h3{
        font-size: 15px;
@@ -60,7 +68,7 @@
         .location_img{
             display: grid;
             grid-template-columns: 1fr;
-            grid-row-gap: 40px;
+            grid-row-gap: 20px;
             iframe, img{
                 height: 300px;
             }
@@ -72,12 +80,11 @@
     
     /* ------------------------PROPIEDADES */
     main{
-        .banner-img{
-            height: 400px;
+        .container__page{
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            padding: 90px 15px 0px 15px;
         }
-    }
-    .property-card{
-        height: fit-content;
     }
     /* ------------------------ CONTACTO */
     .main-img{
@@ -115,13 +122,6 @@
         }
     }
     main{
-        .container__carousel{
-            .carousel{
-                .carousel-control-prev, .carousel-control-next{
-                    padding-top: 80px;
-                }
-            }
-        }
         .places__general{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -137,16 +137,22 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-row-gap: 20px;
+            margin-left: 30px;
         }
     }
 /* -------------------- PROPERTIES */
-    .property-card{
-        width: 300px;
-        height: fit-content;
-        margin: 20px 0px;
+main{
+    .container__page{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        padding: 90px 15px 0px 15px;
+        .container__property{
+            img{
+                width: 80%;
+                height: 400px;
+            }
+        }
     }
-    .main-img{
-        height: 500px;
-    }
+}
 }
  
