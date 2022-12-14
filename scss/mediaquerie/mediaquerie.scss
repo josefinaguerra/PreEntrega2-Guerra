@@ -87,13 +87,49 @@
         }
     }
     /* ------------------------ CONTACTO */
-    .main-img{
-       height: 300px;
+    main{
+        .container__title{
+            h2{
+                font-size: 40px;
+                margin-left: 10px;
+            }
+            p{
+                margin-left: 20px;
+                width: 70%;
+            }
+        }
+        .contact__all{
+            .container__card{
+                width: 80%;
+                grid-template-columns: 1fr;
+                .contact__form{
+                    
+                    .form__container{
+                        margin-left: 0;
+                    }
+                }
+                .contact__info{
+                    
+                    background-color: transparent;
+                    h3{
+                        padding: 10px;
+                    }
+                    .us__info{
+                        display: block;
+                        .us__icon{
+                            height: 40px;
+                            width: auto;
+                        }
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+            }
+        }
     }
-    .time__info p{
-       width: 80%;
-    }
-  }
+}
  /* ----------------------------------MEDIA QUERIE TABLET */
   @media (min-width:768px) and (max-width: 1200px){
     /* --------------------INDEX */
@@ -141,15 +177,55 @@
         }
     }
 /* -------------------- PROPERTIES */
+    main{
+        .container__page{
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            padding: 90px 15px 0px 15px;
+            .container__property{
+                img{
+                    width: 80%;
+                    height: 400px;
+                }
+            }
+        }
+    }
+/* --------------------- CONTACTO */
 main{
-    .container__page{
-        grid-template-columns: 1fr;
-        row-gap: 30px;
-        padding: 90px 15px 0px 15px;
-        .container__property{
-            img{
-                width: 80%;
-                height: 400px;
+    .container__title{
+        h2{
+            font-size: 40px;
+            margin-left: 20px;
+        }
+        p{
+            margin-left: 20px;
+            width: 70%;
+        }
+    }
+    .contact__all{
+        .container__card{
+            width: 80%;
+            grid-template-columns: 1fr;
+            .contact__form{
+                .form__container{
+                    margin-left: 0;
+                }
+            }
+            .contact__info{
+                background-color: transparent;
+                h3{
+                    padding: 10px;
+                }
+                .us__info{
+                    .us__icon{
+                        height: 40px;
+                        width: auto;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+
             }
         }
     }

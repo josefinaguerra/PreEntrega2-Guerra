@@ -1,0 +1,67 @@
+main{
+    .contact__all{
+        display: flex;
+        justify-content: center;
+        .container__card{
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            background-color: $primary_color;
+            width: 70%;
+            margin: -70px 20px 0px 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+            box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+            .contact__form{
+                h3{
+                    font-size: 30px;
+                }
+                .form__container{
+                    display: flex;
+                    flex-direction: column;
+                    width: 85%;
+                    margin: 30px;
+                    background-color: $secondary_color;
+                    padding: 10px 20px 10px 20px;
+                    label{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        justify-content: right;
+                        margin-top: 10px;
+                        width: 80px;
+                        border-radius: 10%;
+                        &:hover{
+                            background-color: $tertiary_color;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+            .contact__info{
+                background-color: $secondary_color;
+                h3{
+                    font-size: 30px;
+                }
+                .us__info{
+                    display: grid;
+                    grid-template-columns: 0.7fr 4fr;
+                    row-gap: 5px;
+                    padding-top: 20px;
+                    align-items: center;
+                    .us__icon{
+                        height: 50px;
+                        width: auto;
+                    }
+                    p{
+                        font-size: 20px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

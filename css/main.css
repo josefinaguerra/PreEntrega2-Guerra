@@ -131,37 +131,19 @@ main {
 /* CONTACTO */
 main {
   background-color: #d7cdccbe; }
-  main .container__contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-  main .contact__title {
-    font-weight: 400;
-    font-size: 30px;
-    margin: 20px 0px 0px 30px;
-    background-color: #bdb5b5;
-    padding-left: 20px; }
-  main .container__us {
-    display: flex;
-    flex-direction: column; }
-  main .us__info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 100px; }
-  main .us__icon {
-    height: 40px;
-    width: auto;
-    margin: 0px 10px 0px 20px; }
-  main .container__time {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    width: 500px; }
-  main .time__info p {
-    margin: 20px 0px 20px 40px;
-    text-align: justify;
-    width: 90%; }
+  main .container__title {
+    display: block;
+    background-color: #817c7c;
+    height: 400px; }
+    main .container__title h2 {
+      padding-top: 150px;
+      margin-left: 100px;
+      font-size: 60px; }
+    main .container__title p {
+      color: rgba(255, 255, 255, 0.685);
+      font-size: 14px;
+      margin-left: 105px;
+      width: 50%; }
 
 /* PROPIEDADES */
 main {
@@ -227,26 +209,6 @@ main {
   height: 650px;
   width: 100%; }
 
-.form__container {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  background-color: #bdb5b5;
-  padding: 10px 20px 10px 20px; }
-  .form__container label {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .form__container input {
-    width: 100%; }
-  .form__container button {
-    justify-content: right;
-    margin-top: 10px;
-    width: 80px;
-    border-radius: 10%; }
-    .form__container button:hover {
-      background-color: #817c7c;
-      transition: 0.5s; }
-
 main {
   padding-bottom: 100px; }
   main .container__page {
@@ -281,6 +243,57 @@ main {
         main .container__page .container__info .rooms__info p {
           font-size: 20px;
           padding: 0px 8px; }
+
+main .contact__all {
+  display: flex;
+  justify-content: center; }
+  main .contact__all .container__card {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: #d7cdccbe;
+    width: 70%;
+    margin: -70px 20px 0px 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2); }
+    main .contact__all .container__card .contact__form h3 {
+      font-size: 30px; }
+    main .contact__all .container__card .contact__form .form__container {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+      margin: 30px;
+      background-color: #bdb5b5;
+      padding: 10px 20px 10px 20px; }
+      main .contact__all .container__card .contact__form .form__container label {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      main .contact__all .container__card .contact__form .form__container input {
+        width: 100%; }
+      main .contact__all .container__card .contact__form .form__container button {
+        justify-content: right;
+        margin-top: 10px;
+        width: 80px;
+        border-radius: 10%; }
+        main .contact__all .container__card .contact__form .form__container button:hover {
+          background-color: #817c7c;
+          transition: 0.5s; }
+    main .contact__all .container__card .contact__info {
+      background-color: #bdb5b5; }
+      main .contact__all .container__card .contact__info h3 {
+        font-size: 30px; }
+      main .contact__all .container__card .contact__info .us__info {
+        display: grid;
+        grid-template-columns: 0.7fr 4fr;
+        row-gap: 5px;
+        padding-top: 20px;
+        align-items: center; }
+        main .contact__all .container__card .contact__info .us__info .us__icon {
+          height: 50px;
+          width: auto; }
+        main .contact__all .container__card .contact__info .us__info p {
+          font-size: 20px;
+          margin-top: 20px; }
 
 /* MEDIA QUERIE */
 /* -----------------------------MEDIA QUERIE MOBILE */
@@ -341,10 +354,28 @@ main {
     row-gap: 30px;
     padding: 90px 15px 0px 15px; }
   /* ------------------------ CONTACTO */
-  .main-img {
-    height: 300px; }
-  .time__info p {
-    width: 80%; } }
+  main .container__title h2 {
+    font-size: 40px;
+    margin-left: 10px; }
+  main .container__title p {
+    margin-left: 20px;
+    width: 70%; }
+  main .contact__all .container__card {
+    width: 80%;
+    grid-template-columns: 1fr; }
+    main .contact__all .container__card .contact__form .form__container {
+      margin-left: 0; }
+    main .contact__all .container__card .contact__info {
+      background-color: transparent; }
+      main .contact__all .container__card .contact__info h3 {
+        padding: 10px; }
+      main .contact__all .container__card .contact__info .us__info {
+        display: block; }
+        main .contact__all .container__card .contact__info .us__info .us__icon {
+          height: 40px;
+          width: auto; }
+        main .contact__all .container__card .contact__info .us__info p {
+          font-size: 14px; } }
 
 /* ----------------------------------MEDIA QUERIE TABLET */
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -387,4 +418,25 @@ main {
     padding: 90px 15px 0px 15px; }
     main .container__page .container__property img {
       width: 80%;
-      height: 400px; } }
+      height: 400px; }
+  /* --------------------- CONTACTO */
+  main .container__title h2 {
+    font-size: 40px;
+    margin-left: 20px; }
+  main .container__title p {
+    margin-left: 20px;
+    width: 70%; }
+  main .contact__all .container__card {
+    width: 80%;
+    grid-template-columns: 1fr; }
+    main .contact__all .container__card .contact__form .form__container {
+      margin-left: 0; }
+    main .contact__all .container__card .contact__info {
+      background-color: transparent; }
+      main .contact__all .container__card .contact__info h3 {
+        padding: 10px; }
+      main .contact__all .container__card .contact__info .us__info .us__icon {
+        height: 40px;
+        width: auto; }
+      main .contact__all .container__card .contact__info .us__info p {
+        font-size: 20px; } }
